@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+   
+}
+
+.header{
+
+
+   
+    position: fixed;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+   
+   
+
+}
+
+.cajalogo{
+    padding: 2px 2px;
+}
+img{
+    border-radius: 50%;
+}
+
+.header .vide{
+
+    width: 100%;
+      height: 200vh;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      
+     position: absolute;
+      z-index: -1;
+      justify-content: center;
+
+  }
+header.abajo{
+    background: #b4b4eb;
+    z-index: 1000;
+   
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #fff;
+    z-index: 1000;
+}
+
+
+
+header.abajo .vide{
+
+   display: none;
+}
+
+
+
+
+.menuh{
+    display: none;
+}
+
+
+.ulmenu, .ulsubmenu{
+    list-style: none;
+}
+
+
+.alink, .aPasublink{
+    padding: 4px 22px 4px 22px;
+    text-decoration: none;
+    font-size: 1.18rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+
+}
+.ulmenu{
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    z-index: 1000;
+ 
+   
+}
+
+
+
+
+
+.licontainer_submenu{
+    position: relative;
+}
+.ulsubmenu{
+    top:39px;
+    position: absolute;
+    display: none;
+    z-index: 1000;
+   width: max-content;
+  
+  
+
+}
+.licontainer_submenu:hover .ulsubmenu{
+    display: block;
+  
+}
+
+.licontainer_submenu:hover .ulsubmenu.hide{
+    display: none;
+}
+
+
+.ulsubmenu .limenu{
+    padding: 14px 5px 14px 10px;
+    background: #adaaee;
+    border-bottom: #fff solid .1px;
+   
+  
+  
+    
+    
+}
+.alink:hover, .aPasublink:hover{
+    background: #8985e4;
+    padding: 17px 22px;
+    width: 100%;
+}
+
+.ulsubmenu .limenu .asublink{
+    font-size: 1.1rem;
+   padding: 15px 10px;
+   padding-left: 10px;
+   text-align: center;
+   width: 100%;
+   
+}
+
+
+.asublink:hover{
+    background: none;
+    font-size: 1.1rem;
+}
+.ulsubmenu .lisubmenu:hover{
+    background: #8985e4;
+   
+  
+   
+   
+}
+
+
+
+/*...................................Menu Inicio.................................*/
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.inicio .wave{
+    position: absolute;
+   top: 258px;
+   
+    width: 100%;
+    z-index: 1;
+   
+}
+.inicio .contenedor {
+    width: 100%;
+    margin-top: -140px;
+}
+.inicio .contenedor .image{
+    display: flex;
+   
+    width: 100%;
+   
+}
+
+.inicio .contenedor .image img{
+    width: 100%;
+    border-radius: 0;
+    height: 540px;
+    z-index: -2;
+}
+
+
+.inicio .contenedor .contenido h2{
+    width: 100%;
+    font-size: 4.5rem;
+    color:rgb(47, 132, 156);
+    text-align: center;
+  
+}
+.inicio .contenido span{
+    width: 100%;
+    font-size: 4.5rem;
+    color: rgb(11, 121, 121);
+}
+
+.inicio .contenedor .contenido .contenedor1{
+    width: 100%;
+}
+
+.Inicio .contenedor .contenido .contenedor1 h3{
+    font-size: 2rem;
+    color: rgb(47, 132, 156);
+}
+
+
+
+
+
+.carrusel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
+    
+  }
+  
+  .carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carrusel-item:hover {
+    transform: scale(1.2);
+  }
+
+   .cajac4 ul li a{
+    display: block;
+    color:rgb(209, 35, 35);
+    margin: 1px;
+    padding: 2px;
+   text-decoration: none;
+    text-align: center;
+    font-size: 34px;
+    
+}
+ .cajac4  ul li a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+  
+
+
+
+
+@media(max-width:768px){
+
+
+    html{
+        width: 100%;
+    }
+    .header{
+       
+        width: 100%;
+        background: #adaaee;
+       z-index:5;
+    
+       
+    }
+    header .cajalogomenu img{
+        padding: 2px;
+      
+    }
+    .menuh{
+        display: initial;
+        color: #fff;
+        margin: 0;
+        margin-right: 4px;
+        border: solid rgb(204, 218, 216);
+        cursor: pointer;
+        font-size: 2rem;
+        width: 7%;
+        align-items: center;
+        background: #fff;
+       
+    }
+
+    .header .vide{
+      
+        z-index: -1;
+    }
+
+    header .navmenu{
+        width: 100%;
+       
+    }
+
+    .ulmenu{
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        background: #adaaee;
+        top:54px;
+        max-height: 500px;
+        overflow-y: scroll;
+        margin-left: -100%;
+        transition: all .5s;
+        padding: 1px 0px;
+        border-top: .1px solid #efeff4;
+        
+       
+       
+       
+    }
+
+    .ulmenu.mostrar{
+        margin-left: 0%;
+       
+
+    }
+
+   
+
+    .alink, .aPasublink{
+        display: block;
+       color: white;
+       width: 100%;
+      
+        cursor: pointer;
+        margin: .1px;
+        padding: 8px 5px;
+    }
+
+
+
+       .ulsubmenu{
+        height: 0px;
+        width: 100%;
+       display: block;
+        overflow: hidden;
+        position: relative;
+        transition: all .5s;
+        z-index: 1;
+        top: -1px;
+       
+    }
+   
+
+    .ulsubmenu.reduced{
+        height:0px;
+    }
+
+   
+    .alink:hover{
+        background: #827de4;
+        margin: .1px;
+        padding: 8px 5px;
+        width: 100%;
+      
+    }
+
+    .aPasublink:hover{
+        background: #827de4;
+        margin: .1px;
+        padding: 8px 5px;
+        width: 100%;
+ }
+
+
+
+    
+   
+
+  .ulsubmenu .lisubmenu{
+        margin: .1px;
+        padding: 2px 5px;
+        background: #adad;
+        border-bottom: solid .1px white;
+    }
+
+   
+
+   
+       .asublink{
+        font-size: 1.2rem;
+        
+       }
+
+       .asublink:hover{
+        background: none;
+       }
+      
+
+       .ulsubmenu .lisubmenu:hover{
+        background: #459876;
+     
+      
+        
+       }
+
+      .inicio .wave{
+       
+       top: 48px;
+       
+        width: 100%;
+        z-index: 3;   
+    }
+    .inicio .contenedor .image{
+        display: flex;
+       
+        width: 100%; 
+        z-index: -4;
+      
+    }
+    
+    .inicio .contenedor .image img{
+        width: 100%;
+        border-radius: 0;
+        height: 500px;
+        margin-top: -220px;
+    }
+
+    .inicio .contenedor .contenido h2{
+        width: 100%;
+        font-size: 4.5rem;
+        color:rgb(47, 132, 156);
+        text-align: center;
+        margin-top: 53px;
+      
+    }
+    .inicio .contenido span{
+        width: 100%;
+        font-size: 4rem;
+        color: rgb(11, 121, 121);
+        top: 290px;
+    }
+    
+
+    
+    
+
+}
